@@ -147,11 +147,11 @@ body{
   font-size: 20px;
 }
 .show_wrap2 .game_img3{
-  background: url(../common/img/game3.png) no-repeat center/cover;
+  background: url(./common/img/game3.png) no-repeat center/cover;
 
 }
 .show_wrap2 .game_img4{
-  background: url(../common/img/game4.png) no-repeat center/cover;
+  background: url(./common/img/game4.png) no-repeat center/cover;
 
 }
 .cloud{
