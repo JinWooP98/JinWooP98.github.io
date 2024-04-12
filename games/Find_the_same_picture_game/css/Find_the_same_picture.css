@@ -1,0 +1,450 @@
+@import url(../../common/common.css);
+@font-face{
+  font-family:'DNFBitBitv2';
+  font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')}
+
+
+body *{
+  font-family:'DNFBitBitv2';
+}
+ body {
+  background: black;
+}
+.game .container .modal .levelBtn .test {
+  background-color: #f8ae25;
+  box-shadow: 0 0 0 1px #F0D264 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 rgba(231, 163, 61, 0.7),
+        0 8px 0 1px rgba(0,0,0,.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+  color: rgb(255, 102, 0);
+}
+.container {
+  background-image: url(../img/mainpage_Bg.jpg);
+  background-size: cover;
+  border: 1px solid #000;
+  width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  position: relative;
+  z-index: 997;
+}
+.container .mainContainer {
+  position: absolute;
+  display: block;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .mainContainer h1 {
+  /* border: 1px solid #000; */
+  font-size: 80px;
+  font-weight: 700;
+  color: black;
+  text-shadow: 4px 4px 4px darkgray;
+  line-height: 1.1;
+  padding-bottom: 15px;
+}
+
+
+.container .mainContainer #openModal {
+  margin-top: 20px;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 4px 4px 4px lightgray;
+  border-radius: 15px;
+  padding: 10px 15px;
+  /* border: 2px solid lightgray; */
+  background-color: #e74c3c;
+  box-shadow: 0 0 0 1px #c63702 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 #C24032,
+        0 8px 0 1px rgba(0,0,0,0.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+}
+.container .mainContainer #openModal:active {
+  box-shadow: 0 0 0 1px #c63702 inset,
+          0 0 0 2px rgba(255,255,255,0.15) inset,
+          0 0 0 1px rgba(0,0,0,0.4);
+}
+.container .mainContainer #openModal:hover {
+  background-color: #f06151;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.15) inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 #C24032,
+        0 8px 0 1px rgba(0,0,0,0.2),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+  color: #f8e0e0;
+  cursor: pointer;
+}
+
+
+.container .prevPage a{
+  display: block;
+  font-size: 30px;
+  top: 30px;
+  right: 30px;
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+#closeModal:hover {
+  cursor: pointer;
+}
+.container .modal {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.26);
+  /* opacity: 0.6; */
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+}
+.container .modal .modalContent{
+  border: 5px solid rgb(247, 223, 193);
+  display: block;
+  margin: 50px auto;
+  text-align : left;
+  position: absolute;
+  width: 500px;
+  padding: 30px;
+  padding-top: 10px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(252, 237, 208);
+  background-size: cover;
+  z-index: 999;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px rgb(228, 214, 184) inset,
+  0 0 0 2px rgba(255,255,255,0.15) inset,
+  0 16px 0 0 rgb(194, 181, 156),
+  0 16px 0 1px rgba(0,0,0,0.4),
+  0 8px 8px 1px rgba(0,0,0,0.5);
+}
+.container .modal .modalContent p {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px darkgray;
+}
+.container .modal .modalContent input {
+  font-size: 30px;
+  width: 400px;
+  border: 1px solid #000;
+  margin-top:20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.container .modal .modalContent .levelBtn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .modal .modalContent .levelBtn button {
+  display: block;
+  width: 89px;
+  height: 74px;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+  padding: 15px 30px;
+  background-color: inherit;
+  border-radius: 15px;
+  /* background: orange; */
+  color: #fff;
+  text-shadow: 2px 2px 2px lightgray;
+  background-color: #F0D264;
+  box-shadow: 0 0 0 1px #F0D264 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 rgba(196, 172, 83, .7),
+        0 8px 0 1px rgba(0,0,0,.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+}
+.container .modal .modalContent .levelBtn button:active {
+  box-shadow: 0 0 0 1px #F0D264 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 0 0 1px rgba(0,0,0,0.4);
+  font-size: 25px;
+}
+.container .modal .modalContent .levelBtn button:hover {
+  cursor: pointer;
+}
+.container .modal .modalContent .exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.container .modal .modalContent .exit #closeModal {
+  font-size: 30px;
+  background-color: inherit;
+}
+.container .modal .modalContent .startBtn {
+  position: relative;
+  display: block;
+  font-size: 22px;
+  padding: 10px 30px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: top .01s linear;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  background-color: #e74c3c;
+  box-shadow: 0 0 0 1px #c63702 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 #C24032,
+        0 8px 0 1px rgba(0,0,0,0.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+}
+.container .modal .modalContent .startBtn:active {
+  box-shadow: 0 0 0 1px #c63702 inset,
+          0 0 0 2px rgba(255,255,255,0.15) inset,
+          0 0 0 1px rgba(0,0,0,0.4);
+
+}
+.container .modal .modalContent .startBtn:hover {
+  background-color: #f15b4a;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.15) inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 #C24032,
+        0 8px 0 1px rgba(0,0,0,0.2),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+  color: #f8e0e0;
+  cursor: pointer;
+}
+
+
+body *{
+  font-family:'DNFBitBitv2';
+  color: rgb(241, 194, 91);
+}
+#game-page {
+  width: 100vw;
+  background: #000000;
+  /* position: absolute; */
+}
+#container {
+  width: 960px;
+  height: 100vh;
+  background: url(../img/mainpage_Bg1.jpg);
+  background-size: cover;
+  border-bottom: 15px solid rgb(126, 91, 50);
+  top: 50%;
+  left: 50%;
+}
+
+
+/* modal Section */
+#modal .good {
+  background: rgb(0, 0, 0, 0.26);
+  width: 960px;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  z-index: 101;
+}
+#modal .bad
+{
+  background: rgb(0, 0, 0, 0.26);
+  width: 960px;
+  height: 100vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  z-index: 100;
+}
+#modal .goodscoreBody, 
+#modal .badscoreBody {
+  /* background: rgb(252, 237, 208); */
+  background-size: cover;
+  box-shadow: 1px;
+  width: 500px;
+  height: 290px;
+  padding: 16px 80px;
+  font-size: 35px;
+  text-shadow: 2px 2px rgb(134, 134, 134);
+  line-height: 1.3;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  border: 5px solid rgb(247, 223, 193);
+  background: rgb(252, 237, 208);
+  box-shadow: 0 0 0 1px rgb(228, 214, 184) inset,
+  0 0 0 2px rgba(255,255,255,0.15) inset,
+  0 16px 0 0 rgb(194, 181, 156),
+  0 16px 0 1px rgba(0,0,0,0.4),
+  0 8px 8px 1px rgba(0,0,0,0.5);
+}
+#modal .score {
+  color: rgb(255, 75, 43);
+  font-size: 60px;
+  padding: 10px 0;
+}
+#modal .replayG,
+#modal .replayB {
+  background: rgb(238, 238, 238);
+  border-radius: 30px;
+  box-shadow: 3px 3px rgb(121, 121, 121);
+  padding: 5px 0;
+  margin: 35px 0;
+  background-color: #F0D264;
+  box-shadow: 0 0 0 1px #F0D264 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 rgba(196, 172, 83, .7),
+        0 8px 0 1px rgba(0,0,0,.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+}
+#modal .replayG:active,
+#modal .replayB:active {
+    box-shadow: 0 0 0 1px #F0D264 inset,
+            0 0 0 2px rgba(255,255,255,0.15) inset,
+            0 0 0 1px rgba(0,0,0,0.4);
+}
+#modal .replayG:hover,
+#modal .replayB:hover {
+  background-color: #e9bd20;
+  box-shadow: 0 0 0 1px #e9bd20 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 rgba(185, 155, 46, 0.7),
+        0 8px 0 1px rgba(0,0,0,.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+  cursor: pointer;
+  color: rgb(241, 203, 120);
+}
+
+
+/* header Section */
+#header-contents {
+  /* border: 8px solid rgb(36, 173, 228); */
+  background: rgb(36, 173, 228, 0.55);
+  border-top: 10px solid rgb(78, 124, 88);
+  border-bottom: 10px solid rgb(78, 124, 88);
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  font-size: 35px;
+  text-shadow: 2px 2px rgb(134, 134, 134);
+  line-height: 1.3;
+  text-align: center;
+}
+.time-box .scale {
+  animation: vibration 2s infinite;
+}
+@keyframes vibration {
+  0% {
+    transform: scale(0.7);
+  }
+  25% {
+    transform: scale(0.5, 1.2);
+  }
+  50% {
+    transform: scale(0.9, 0.5);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+/* main Section */
+#main-contents {
+  margin: 40px 0;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 30px
+}
+.flipBox {
+  width: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  perspective: 1400px;
+}
+.main-imgbox {
+  /* background: rgb(134, 134, 134); */
+  /* box-shadow: 3px 2px rgb(117, 117, 117); */
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transition: 0.4s;
+  transform-style: preserve-3d;
+  transform: rotate(0deg);
+}
+.main-imgbox .front {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  position: absolute;
+  backface-visibility: hidden;
+  border: 2px solid rgb(134, 134, 134);
+}
+.main-imgbox .back {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  border: 2px solid rgb(134, 134, 134);
+}
+
+
+/* footer Section */
+#footer-contents {
+  padding: 25px 0px;
+  font-size: 35px;
+  text-shadow: 2px 2px rgb(134, 134, 134);
+  text-align: center;
+}
+#footer-contents .close {
+  /* border: 8px solid rgb(126, 91, 50); */
+  border-radius: 30px;
+  display: inline-block;
+  padding: 30px 100px;
+  background-color: #e74c3c;
+  box-shadow: 0 0 0 1px #c63702 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 #be4133,
+        0 8px 0 1px rgba(0,0,0,0.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+  color: rgb(245, 236, 236);
+}
+#footer-contents .close:active {
+  box-shadow: 0 0 0 1px #c63702 inset,
+          0 0 0 2px rgba(255,255,255,0.15) inset,
+          0 0 0 1px rgba(0,0,0,0.4);
+}
+#footer-contents .close:hover {
+  background-color: #e43724;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.15) inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 #e43724,
+        0 8px 0 1px rgba(0,0,0,0.2),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+  color: #cec5c5;
+  cursor: pointer;
+}
+button {
+  user-select: none;
+}
+

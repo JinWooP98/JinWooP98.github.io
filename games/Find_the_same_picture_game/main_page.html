@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find the same picture</title>
+  <link rel="stylesheet" href="./css/main_page.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+</head>
+<body>
+  <div class="container">
+    <div class="mainContainer">
+      <h1>Find The Same <br>Picture</h1>
+      <button id="openModal" type="button">Start!</button>
+    </div>
+    <div class="prevPage">
+      <a href="#"><i class="fas fa-undo-alt"></i></a>
+    </div>
+    <div class="modal">
+      <div class="modalContent">
+        <p>닉네임 :</p>
+        <input id="nickName" type="text" placeholder="닉네임을 입력하세요.">
+        <p>난이도 선택</p>
+        <div class="levelBtn">
+          <button id="high">상</button>
+          <button id="mid">중</button>
+          <button id="low">하</button>
+        </div>
+        <div class="exit">
+          <button id="closeModal"><i class="fas fa-times-circle"></i></button>
+        </div>
+        <button class="startBtn">시작</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

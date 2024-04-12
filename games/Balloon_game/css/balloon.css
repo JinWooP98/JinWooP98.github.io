@@ -1,0 +1,442 @@
+html,body{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'TTHakgyoansimMonggeulmonggeulR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMonggeulmonggeulR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KCC-Ganpan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family:'DNFBitBitv2';
+  font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')}
+
+#balloon_main.main_wrap{
+  width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  background: url(../img/balloon_bg2.jpg) no-repeat center/cover;
+  position: relative;
+}
+
+
+
+.close{
+  display: block;
+    font-size: 30px;
+    top: 30px;
+    right: 30px;
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+.close i{
+  color: rgb(241, 194, 91);
+}
+
+.game_ready_wrap{
+  width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* position: relative; */
+    z-index: 10;
+    text-align: center;
+}
+.game_ready_wrap .balloon_title{
+  font-family: 'TTHakgyoansimMonggeulmonggeulR';
+  height: 75px;
+  margin-top: -150px;
+  margin-bottom: 0;
+  font-size: 70px;
+  color: #fff;
+  text-shadow: 7px 0 #4E4CF5, 0 7px #4E4CF5, 7px 0 #4E4CF5, 0 -7px #4E4CF5
+  /* text-shadow: #a8e4ff;text-shadow: -5px 0 deepskyblue, 0 5px deepskyblue, 5px 0 deepskyblue, 0 -5px deepskyblue; */
+}
+.game_ready_wrap button{
+  font-family: 'KCC-Ganpan';
+  /* padding: 5px 20px; */
+  background-color: #fff;
+  /* border-radius: 5px; */
+}
+.game_ready_wrap .ready_btn{
+  margin: 50px 0 15px 0;
+ color: #4E4CF5;
+}
+.game_ready_wrap .ready_level{
+  background-color: #4E4CF5;
+  color: #fff;
+  font-size: 35px;
+}
+.game_ready_wrap .level_text{
+  font-family: 'KCC-Ganpan';
+  margin-top: 20px;
+  font-size: 30px;
+  color: #4E4CF5;
+  /* text-shadow: -1px 0 #4E4CF5, 0 1px #4E4CF5, 1px 0 #4E4CF5, 0 -1px #4E4CF5; */
+}
+
+
+
+
+
+.balloon_wrap{
+  width: 960px;
+  height: 80%;
+  position: absolute;
+  top: 0%;
+  z-index: 9;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+}
+.balloon_wrap .balloon {
+  position: absolute;
+}
+.balloon_wrap .balloon .balloon_number{
+  font-size: 36px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    color: #333;
+    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+}
+
+
+
+.balloon_footer{
+  font-family:'DNFBitBitv2';
+  position: absolute;
+    bottom: 0;
+    width: 930px;
+    display: flex;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.balloon_footer > div{  
+  width: 130px;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  /* background-color: rgba(41,54, 87, 0.4); */
+  font-size: 30px;
+  
+}
+.balloon_footer > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balloon_footer > div .ft_balloon{
+  width: 50%;
+}
+.balloon_footer > div img{
+  max-width: 100%;
+}
+
+
+/* 2024 04 08 추가  */
+.game_over_modal,.level_modal{                
+  font-family: 'KCC-Ganpan';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 35px 70px 20px 70px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.games_modal h2{
+  color: #fcbe00;
+  font-size: 40px;
+  font-weight: 900;;
+  position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
+}
+.games_modal .level_btn{
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-family: 'KCC-Ganpan';
+  padding: 10px 35px;
+  border: 3px solid #4E4CF5;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #4E4CF5;
+  cursor: pointer;
+  margin: 30px auto 0;
+  display: block;
+}
+/* 2024.04.05 css 추가  */
+.hidden{
+  display: none;
+}
+.game_over_modal,.game_win_modal{
+  z-index: 9;
+}
+
+button,.balloon{cursor: pointer;}
+
+
+
+
+/* 20240411 스타트 버튼 디자인 */
+.btn {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 13rem;
+  overflow: hidden;
+  height: 3rem;
+  background-size: 300% 300%;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+strong {
+  font-family: 'KCC-Ganpan';
+  z-index: 2;
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: #FFFFFF;
+  text-shadow: 0 0 4px white;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.btn:hover {
+  transform: scale(1.1)
+}
+
+.btn:active {
+  border: double 4px #FE53BB;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn:active .circle {
+  background: #FE53BB;
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.75);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+
+/* 20240411 레벨 디자인  */
+.ready_level {
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.ready_level span {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.ready_level:hover .btn-text-one {
+  top: -100%;
+}
+
+.ready_level:hover .btn-text-two {
+  top: 50%;
+}
+
+
+
+/* 2024.04.11 게임 지고 이기는거 모달 창 수정  */
+.game_win_modal {
+  width: 450px;
+  height: 350px;
+  padding: 0;
+}
+
+.game_win_modal{         
+  font-family: 'KCC-Ganpan';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 9;
+}
+
+.level_modal h2{
+  position: static;
+  text-align: center;
+  transform: translateY(0);
+}

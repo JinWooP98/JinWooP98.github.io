@@ -1,0 +1,202 @@
+@import url(../../common/common.css);
+@font-face{
+  font-family:'DNFBitBitv2';
+  font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')}
+body *{
+  font-family:'DNFBitBitv2';
+}
+ body {
+  background: black;
+}
+.container {
+  background-image: url(../img/mainpage_Bg.jpg);
+  background-size: cover;
+  border: 1px solid #000;
+  width: 960px;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+.container .mainContainer {
+  position: absolute;
+  display: block;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .mainContainer h1 {
+  /* border: 1px solid #000; */
+  font-size: 80px;
+  font-weight: 700;
+  color: black;
+  text-shadow: 4px 4px 4px darkgray;
+  line-height: 1.1;
+  padding-bottom: 15px;
+}
+
+.container .mainContainer #openModal {
+  margin-top: 20px;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 4px 4px 4px lightgray;
+  border-radius: 15px;
+  padding: 10px 15px;
+  /* border: 2px solid lightgray; */
+  background-color: #e74c3c;
+  box-shadow: 0 0 0 1px #c63702 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 #C24032,
+        0 8px 0 1px rgba(0,0,0,0.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+}
+.container .mainContainer #openModal:active {
+  box-shadow: 0 0 0 1px #c63702 inset,
+          0 0 0 2px rgba(255,255,255,0.15) inset,
+          0 0 0 1px rgba(0,0,0,0.4);
+}
+
+
+.container .prevPage a{
+  display: block;
+  font-size: 30px;
+  top: 30px;
+  right: 30px;
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  
+}
+.container .modal {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.26);
+  /* opacity: 0.6; */
+  width: 100%;
+  height: 100%;
+}
+
+.container .modal .modalContent{
+  border: 5px solid rgb(247, 223, 193);
+  display: block;
+  margin: 50px auto;
+  text-align : left;
+  position: absolute;
+  z-index: 9999;
+  width: 500px;
+  padding: 30px;
+  padding-top: 10px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(252, 237, 208);
+  background-size: cover;
+  z-index: 999;
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px rgb(228, 214, 184) inset,
+  0 0 0 2px rgba(255,255,255,0.15) inset,
+  0 16px 0 0 rgb(194, 181, 156),
+  0 16px 0 1px rgba(0,0,0,0.4),
+  0 8px 8px 1px rgba(0,0,0,0.5);
+}
+
+.container .modal .modalContent p {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px darkgray;
+}
+
+
+.container .modal .modalContent input {
+  font-size: 30px;
+  width: 400px;
+  border: 1px solid #000;
+  margin-top:20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.container .modal .modalContent .levelBtn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.container .modal .modalContent .levelBtn button {
+  display: block;
+  width: 89px;
+  height: 74px;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+  padding: 15px 30px;
+  background-color: inherit;
+  border-radius: 15px;
+  /* background: orange; */
+  color: #fff;
+  text-shadow: 2px 2px 2px lightgray;
+  background-color: #F0D264;
+  box-shadow: 0 0 0 1px #F0D264 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 rgba(196, 172, 83, .7),
+        0 8px 0 1px rgba(0,0,0,.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+}
+.container .modal .modalContent .levelBtn button:active {
+  box-shadow: 0 0 0 1px #F0D264 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 0 0 1px rgba(0,0,0,0.4);
+  font-size: 25px;
+}
+.container .modal .modalContent .exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.container .modal .modalContent .exit #closeModal {
+  font-size: 30px;
+  background-color: inherit;
+}
+
+.container .modal .modalContent .startBtn {
+  /* background: orangered;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 30px;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  text-shadow: 2px 2px 2px lightgray;
+  border: 2px solid lightgray; */
+  position: relative;
+  display: block;
+  font-size: 22px;
+  padding: 10px 30px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: top .01s linear;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+  background-color: #e74c3c;
+  box-shadow: 0 0 0 1px #c63702 inset,
+        0 0 0 2px rgba(255,255,255,0.15) inset,
+        0 8px 0 0 #C24032,
+        0 8px 0 1px rgba(0,0,0,0.4),
+        0 8px 8px 1px rgba(0,0,0,0.5);
+}
+/* .container .modal .modalContent .startBtn:hover {
+  font-size: 32px;
+  margin-top: 16px;
+} */
+.container .modal .modalContent .startBtn:active {
+  box-shadow: 0 0 0 1px #c63702 inset,
+          0 0 0 2px rgba(255,255,255,0.15) inset,
+          0 0 0 1px rgba(0,0,0,0.4);
+
+}

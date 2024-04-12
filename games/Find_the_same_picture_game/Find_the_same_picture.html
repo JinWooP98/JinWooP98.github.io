@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find the same picture</title>
+  <link rel="stylesheet" href="./css/Find_the_same_picture.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+  <link rel="icon" href="img/favicon-96x96.png">
+  <script src="js/start_page.js" defer></script>
+  <script src="js/game_page.js" defer></script>
+  <script src="js/flipCards.js" defer></script>
+</head>
+<body>
+  <div class="game">
+    <div class="container">
+      <div class="mainContainer">
+        <h1>Find The Same <br>Picture</h1>
+        <button id="openModal" type="button">Start!</button>
+      </div>
+      <div class="prevPage">
+        <a href="../index.html"><i class="fas fa-undo-alt"></i></a>
+      </div>
+      <div class="modal">
+        <div class="modalContent">
+          <p>닉네임 :</p>
+          <input id="nickName" type="text" placeholder="닉네임을 입력하세요." autocomplete="off">
+          <p>난이도 선택</p>
+          <div class="levelBtn">
+            <button id="high">상</button>
+            <button id="mid">중</button>
+            <button id="low">하</button>
+          </div>
+          <div class="exit">
+            <button id="closeModal"><i class="fas fa-times-circle"></i></button>
+          </div>
+          <button class="startBtn">시작</button>
+        </div>
+      </div>
+    </div>
+    <!-- Game-page -->
+    <section id="game-page">
+      <!-- Modal -->
+      <!-- good & bad result -->
+      <section id="modal">
+        <div class="good center">
+            <div class="goodscoreBody center">
+              <div class="score">너 좀 하네?</div>
+              <div>잘했어요!</div>
+              <div class="replayG">다시하기</div>
+            </div>
+        </div>
+    
+        <section id="modal">
+          <div class="bad center">
+              <div class="badscoreBody center">
+                <div class="score">ㅋㅋㅋ</div>
+                <div>그것밖에 못하니?</div>
+                <div class="replayB">다시하기</div>
+              </div>
+          </div>
+    
+      </section>
+    
+    
+      <section id="container" class="center">
+        <!-- header -->
+        <section id="header">
+          <div id="header-contents">
+            <div>
+              <div>닉네임</div>
+              <div>피카츄</div>
+            </div>
+            <div class="time-box">
+              <div class="time-text">제한시간</div>
+              <div class="time"></div>
+            </div>
+            <div>
+              <div>카드개수</div>
+              <div>8개</div>
+            </div>
+          </div>
+        </section>
+    
+    
+        <!-- main -->
+        <section id="main">
+          <div id="main-contents">
+            <div class="box box1">
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+            </div>
+            <div class="box box2">
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+            </div>
+            <div class="box box3">
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+            </div>
+            <div class="box box4">
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+            </div>
+            <div class="box box5">
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+            </div>
+            <div class="box box6">
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+            </div>
+            <div class="box box7">
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+            </div>
+            <div class="box box8">
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+              <div class="flipBox">
+                <div class="main-imgbox"></div>
+              </div>
+            </div>
+    
+    
+    
+          </div>
+        </section>
+    
+    
+        <!-- footer -->
+        <section id="footer">
+          <div id="footer-contents">
+            <div type="submit" class="close">나가기</div>
+          </div>
+        </section>
+    
+    
+      </section>
+     </section>
+  </div>
+</body>
+</html>

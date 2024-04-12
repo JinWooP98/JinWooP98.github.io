@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>풍선게임</title>
+  <link rel="stylesheet" href="../common/common.css">
+  <link rel="stylesheet" href="css/balloon.css">
+  <script src="js/balloon.js" defer></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+</head>
+<body>
+
+<!-- 구름  -->
+
+
+
+<article id="balloon_main" class="main_wrap">
+  <!-- 게임 레디하는부분 -->
+  <section class="game_ready_wrap">
+  <!-- <div class="close"><img src="img/x.png" alt=""></div> -->
+  <div class="close">
+    <a href="../index.html"><i class="fas fa-undo-alt"></i></a>
+  </div>
+    <div class='typing balloon_title'><h1 class="text">BALLOON POP!!</h1></div>
+    <!-- <div class="text_box balloon_title" data-trigger>
+      <span class="text"></span>
+    </div> -->
+    <!-- <h1 class="balloon_title">
+      BALLOON<br>
+      POP
+    </h1> -->
+    <!-- <button class="ready_btn">스따뚜</button> -->
+    <button class="btn ready_btn" type="button">
+      <strong>START</strong>
+      <div id="container-stars">
+        <div id="stars"></div>
+      </div>
+    
+      <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </button>
+    
+    <!-- <button class="ready_level">LEVEL</button> -->
+    <button class="ready_level ">
+      <span class="btn-text-one">LEVEL</span>
+      <span class="btn-text-two">choice!</span>
+  </button>
+    <p class="level_text">EASY</p>
+  </section>
+
+  <!-- 레디하는 화면에서 레벨 누르면 나타는 모달 화면  -->
+  <section class="level_modal games_modal hidden">
+    <h2>LEVEL</h2>
+    <button class="level_btn EASY" id="EASY">EASY</button>
+    <button class="level_btn NORMAL" id="">NORMAL</button>
+    <button class="level_btn HARD" id="">HARD</button>
+  </section>
+
+    
+  <!-- 풍선 이미지  -->
+  <section class="balloon_wrap hidden">
+    <!-- 생성될 풍선 박스  -->
+    <!-- <div class="balloon" style="outline: 3px solid red;">
+      <img src="img/balloon_1.png" alt="balloon" class="balloon_img">
+      <span class="balloon_number">1</span>
+    </div> -->
+  </section>
+
+  <!-- 푸터 : 풍선 터트린 갯수 및 타이머 -->
+  <section class="balloon_footer hidden">
+    <div>
+      <div class="ft_balloon"><img src="img/balloon.png"></div>
+      <!-- 풍선 버튼 클릭하면 클릭한 횟수만큼 보이는 값 -->
+      <p class="click_number">0</p>
+    </div>
+    <div>
+      <div class="ft_balloon animate__animated animate__pulse animate__infinite">
+        <img src="img/bomb.png">
+      </div>
+      <!-- 게임 시간  -->
+      <p class="timer"></p>
+    </div>
+  </section>
+
+  <!-- 2024.04.08 추가  -->
+  <!-- 게임오버 화면  -->
+  <section class="game_win_modal games_modal end_modal hidden">
+    <h2>이겼네??</h2>
+    <button class="level_btn retry win_btn">RETRY</button>
+    <!-- <button class="level_btn win_btn" id="">LEVEL</button>
+    <p class="level_text"></p> -->
+  </section>
+
+</article>
+
+
+
+</body>
+</html>
