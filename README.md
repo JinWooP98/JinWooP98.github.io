@@ -17,7 +17,7 @@
 |박진우|Front|https://github.com/JinWooP98|
 |김예진|Front|https://github.com/zinit95|
 |배윤정|Front|https://github.com/yunjeongg|
-|송지훈|Front|https://github.com/JinWooP98|
+|송지훈|Front|https://github.com/songjihoon12|
 
 ## 기술스택
 HTML, CSS, JAVASCRIPT, VISUALSTUDIO, GITHUB
@@ -62,3 +62,12 @@ HTML, CSS, JAVASCRIPT, VISUALSTUDIO, GITHUB
     - 시간 내 모든 풍선을 터트릴 경우 '성공'창이 표시됩니다.
     - 시간 내 모든 풍선을 터트리지 못할 경우 '실패'창이 표시됩니다.
     - '성공', '실패' 창의 'RETRY' 버튼을 통해 시작페이지로 돌아갈 수 있습니다.
+
+## 개발 기간
+- 2024.04.04 ~ 2024.04.15
+  1. 주제 선정 및 역할 분배
+  2. HTML/CSS 구조잡기 및 꾸미기
+  3. JAVASCRIPT 기능설계 및 구현
+  4. 코드합치기 및 수정, 피드백
+  5. 최종검토
+  6. PPT제작 및 발표준비
