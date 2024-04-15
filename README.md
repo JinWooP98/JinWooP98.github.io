@@ -65,9 +65,9 @@ HTML, CSS, JAVASCRIPT, VISUALSTUDIO, GITHUB
 
 ## 개발 기간
 - 2024.04.04 ~ 2024.04.15
-  1. 주제 선정 및 역할 분배
-  2. HTML/CSS 구조잡기 및 꾸미기
-  3. JAVASCRIPT 기능설계 및 구현
-  4. 코드합치기 및 수정, 피드백
-  5. 최종검토
-  6. PPT제작 및 발표준비
+  - 주제 선정 및 역할 분배
+  - HTML/CSS 구조잡기 및 꾸미기
+  - JAVASCRIPT 기능설계 및 구현
+  - 코드합치기 및 수정, 피드백
+  - 최종검토
+  - PPT제작 및 발표준비
