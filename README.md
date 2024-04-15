@@ -71,3 +71,17 @@ HTML, CSS, JAVASCRIPT, VISUALSTUDIO, GITHUB
   - 코드합치기 및 수정, 피드백
   - 최종검토
   - PPT제작 및 발표준비
+
+## 예시화면
+![메인페이지](./img/MainPAge.png)
+![메인페이지-게임선택](./img/M_gameSelect.png)
+![같은그림찾기-시작페이지](./img/B_startPage.png)
+![같은그림찾기-게임설정창](./img/F_startModal.png)
+![같은그림찾기-게임페이지](./img/F_gamePage.png)
+![같은그림찾기-게임클리어](./img/F_successModal.png)
+![같은그림찾기-게임실패](./img/F_SucessModal.png)
+![풍선게임-시작페이지](./img/B_startPage.png)
+![풍선게임-난이도선택](./img/B_levelSelect.png)
+![풍선게임-게임페이지](./img/B_gamePage.png)
+![풍선게임-게임클리어](./img/B_SuccessModal.png)
+![풍선게임-게임실패](./img/B_failModal.png)
